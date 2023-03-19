@@ -1,3 +1,176 @@
+body {
+  margin: 0;
+}
+.container {
+  padding: 2rem;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  background-color: #050505;
+}
+
+h2,a{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.box {
+  width: 100%;
+  border-width: 1px;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #0f0f0f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom right, #5f26ff, #332936) 1;
+}
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.text {
+  font-size: 1.8rem;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #5f26ff, #9f49ba);
+}
+
+.logo {
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10rem;
+  height: 2.5rem;
+}
+
+.help {
+  font-size: 0.7rem;
+  margin-top: 0;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.form {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  color: #9ca3af;
+  font-family: 'Inter', sans-serif;
+  line-height: 1;
+}
+fieldset {
+  flex-direction: row;
+  margin-bottom: 0;
+  padding: 0.5rem;
+  color: #9ca3af;
+  border: none;
+}
+
+.value {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  color: #fff;
+}
+
+label {
+  /* Reduce margin bottom */
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+}
+/* Hide default styles */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3px;
+  background: transparent;
+}
+
+/* Custom track */
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: #7d7d7d;
+  border-radius: 20px;
+}
+
+/* Custom thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+  margin-top: -6px;
+}
+
+/* Thumb on hover */
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #5f26ff;
+}
+
+/* Thumb on active */
+input[type="range"]::-webkit-slider-thumb:active {
+  background: #5f26ff;
+}
+
+/* Inactive thumb */
+input[type="range"]:disabled::-webkit-slider-thumb {
+  background: #b5b5b5;
+}
+button {
+  padding: 0.4rem 0.8rem;
+  font-size: medium;
+  height: 2.5rem;
+  background-color: #5f26ff;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+.answer {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+.hide {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+@media screen and (min-width: 768px) {
 .container {
   display: flex;
   justify-content: flex-start;
@@ -102,14 +275,6 @@ input[type="range"] {
   background: #ddd;
 }
 
-/* Hide default styles */
-input[type="range"] {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 3px;
-  background: transparent;
-}
-
 /* Custom track */
 input[type="range"]::-webkit-slider-runnable-track {
   width: 100%;
@@ -184,4 +349,5 @@ p {
   margin: 1rem 0;
   color: #fff;
   font-family: 'Inter', sans-serif;
+}
 }
