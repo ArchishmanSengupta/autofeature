@@ -215,6 +215,7 @@ h2,a{
 }
 
 .text {
+  font-size: 2.3rem;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(to right, #5f26ff, #9f49ba);
@@ -223,7 +224,7 @@ h2,a{
 .logo {
   position: absolute;
   top: 2rem;
-  left: 1rem;
+  left: 6rem;
   width: 12rem;
   height: 3rem;
   object-fit: cover;
