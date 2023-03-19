@@ -114,7 +114,7 @@ export default function Home() {
           </span>
         </h1>
       </section>
-      <a href="https://twitter.com/archiexzzz">@archiexzzz
+      <a href="https://twitter.com/archiexzzz">
       <h2>@archiexzzz</h2>
       </a>
     </div>
