@@ -27,17 +27,19 @@ export default function Home() {
 
     const percentage = ((score / weightSum) * 10).toFixed(0);
     let shouldBuild = "No Data Provided";
+
     if (percentage < 46) {
       shouldBuild = "Don't build 🙅‍♂️";
     } else if (percentage >= 46 && percentage < 50) {
-      shouldBuild = "No, but a close call.";
+      shouldBuild = "No, but it is a close call because the score is just below the threshold for building.";
     } else if (percentage === 50) {
       shouldBuild = "50-50. Go with the gut.";
     } else if (percentage > 50 && percentage <= 54) {
-      shouldBuild = "Yes, but a close call.";
+      shouldBuild = "Yes, but it is a close call because the score is just above the threshold for building.";
     } else if (percentage > 54) {
       shouldBuild = "Build 🥳🛠";
     }
+
 
     document.querySelector('.answer').classList.remove('hide');
     document.querySelector('.bool').innerHTML = shouldBuild;
