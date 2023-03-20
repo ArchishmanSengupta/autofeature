@@ -26,7 +26,7 @@ export default function Home() {
     });
 
     const percentage = ((score / weightSum) * 10).toFixed(0);
-    let shouldBuild = "No Data Provided";
+    let shouldBuild = "";
 
     if (percentage < 46) {
       shouldBuild = "Don't build 🙅‍♂️";
